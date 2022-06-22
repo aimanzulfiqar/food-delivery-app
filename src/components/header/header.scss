@@ -1,4 +1,4 @@
-@import "./globals.scss";
+@import "../../styles/globals.scss";
 
 * {
   padding: 0;
@@ -25,15 +25,19 @@
     display: flex;
     width: 100%;
     gap: 94px;
+    margin: 0%;
+    padding: 0;
     justify-content: right;
   }
   li {
     list-style: none;
-    margin-right: 40px;
   }
   a {
     text-decoration: none;
     color: black;
+  }
+  li:last-child {
+    margin-right: 40px;
   }
 }
 
@@ -44,16 +48,15 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   ul {
     flex-wrap: wrap;
   }
-
   .navbar-tgl {
     display: flex;
-    margin-top: 200px;
-    justify-content: space-around;
+    margin: 80px;
   }
+
   a {
     display: none;
   }
