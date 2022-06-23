@@ -15,12 +15,11 @@
 }
 .font {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  top: 72px;
-  position: relative;
+  align-items: center;
 }
 h3 {
-  position: absolute;
   font-style: normal;
   font-weight: $font-weight;
   font-size: 24px;
@@ -36,19 +35,16 @@ h5 {
   text-align: center;
   line-height: 80px;
   letter-spacing: 0.2px;
-  margin-top: 90px;
   font-size: $font-secondary;
   font-weight: $font-weight;
 }
 h4 {
-  position: absolute;
   width: 728px;
   height: 96px;
-  font-weight: 500px;
+  font-weight: 500;
   font-size: 24px;
   line-height: 38px;
   text-align: center;
-  top: 250px;
   color: #f7f7f7;
 }
 
@@ -56,7 +52,6 @@ h4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 135px;
   column-gap: 20px;
 }
 
@@ -79,30 +74,14 @@ h4 {
   flex-grow: 0;
 }
 .img-container {
-  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-top: -150px;
-}
-
-.image {
-  margin-left: -190px;
-  width: 599px;
-  height: 900px;
-  filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.21));
-}
-
-.imgw {
-  width: 280px;
-  height: 556px;
-  margin-top: 100px;
-  margin-left: -240px;
+  margin-top: -100px;
 }
 
 hr {
   width: 50%;
-  margin: auto;
+  margin: 0 auto;
 
   border: 3px solid #e4e4e4;
 }
@@ -122,7 +101,6 @@ hr {
   }
   h5 {
     display: block;
-    position: absolute;
     font-style: normal;
     font-weight: $font-weight;
     font-size: 16px;
@@ -131,11 +109,11 @@ hr {
     color: #737373;
   }
   .tag {
-    width: 391px;
+    width: 100vw;
     height: 128px;
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
+    font-weight: 500;
+    font-size: 24px;
     line-height: 42px;
 
     text-align: center;
@@ -144,7 +122,7 @@ hr {
     color: #252b42;
   }
   h4 {
-    width: 342px;
+    width: 320px;
     height: 76px;
 
     font-family: "Montserrat";
@@ -161,7 +139,7 @@ hr {
   .btn {
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 20px;
     gap: 17px;
   }
   .btn-transparent {
@@ -169,21 +147,12 @@ hr {
     color: $theme-color;
   }
   .img-container {
-    margin-top: -90px;
-    gap: 47px;
+    margin: 0;
+    img {
+      width: 100%;
+    }
   }
-  .image {
-    width: 100%;
-    height: 100%;
-    margin-left: -50px;
-    z-index: 1;
-  }
-  .imgw {
-    width: 50%;
-    height: 100%;
-    margin-top: 100px;
-    margin-right: 90px;
-  }
+
   hr {
     width: 100%;
   }

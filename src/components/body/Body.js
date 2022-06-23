@@ -1,7 +1,6 @@
 import React from "react";
 import "./body.scss";
-import screen from "../../images/screen-orange.png";
-import screen2 from "../../images/screen-white.png";
+import screens from "../../images/screens.png";
 
 const Body = () => {
   return (
@@ -22,10 +21,9 @@ const Body = () => {
           <button className="btn-transparent">Appstore</button>
         </div>
         <div className="img-container">
-          <img src={screen} alt="screen1" className="image" />
-          <img src={screen2} alt="screen1" className="imgw" />
+          <img src={screens} alt="screen1" className="image" />
         </div>
-        <hr></hr>
+        <hr />
       </div>
     </div>
   );

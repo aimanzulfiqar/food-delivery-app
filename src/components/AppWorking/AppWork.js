@@ -1,20 +1,20 @@
 import React from "react";
 import "../AppWorking/AppWork.scss";
-import accountimg from "../../images/account.png";
 
-const AppWork = () => {
+const AppWork = (props) => {
   return (
     <div>
-      <div className="appwork">
-        <p className="para">How the App Works</p>
+      <div className="appwork" style={{ "margin-top": props.margintop }}>
+        <p className="para" style={{ display: props.display }}>
+          How the App Works
+        </p>
         <div className="acc-grid">
-          <img src={accountimg} alt="Create your account" />
+          <img src={props.img} alt="Create an account" className="gridimg" />
           <div className="acctxt">
-            <h3 className="line1">Create an account</h3>
-            <h2>Create/Login to an existing account to get started</h2>
-            <h4>
-              an account is created with your email and a desired password
-            </h4>
+            <h3>{props.h3}</h3>
+            <h2 className="acc">{props.h2}</h2>
+
+            <h4>{props.h4}</h4>
           </div>
         </div>
       </div>
@@ -23,3 +23,4 @@ const AppWork = () => {
 };
 
 export default AppWork;
+//

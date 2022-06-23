@@ -2,8 +2,8 @@
 .appwork {
   margin: 0;
   padding: 0;
-  margin-top: 700px;
 }
+
 .para {
   color: black;
   font-family: $font-secondary;
@@ -13,37 +13,34 @@
   text-align: center;
 }
 .acc-grid {
-  display: grid;
-  width: 100vw;
-  height: 100%;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 171px;
+  display: flex;
+  justify-content: center;
 }
-
 .acc-grid {
   img {
     height: 100%;
     width: 100%;
-    margin: auto;
-    margin-left: 245px;
+    max-width: 400px;
+
     filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
   }
+
   .acctxt {
     width: 568px;
-    height: 280px;
-    display: grid;
-    margin-top: 340px;
-  }
-  .acctxt {
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+    margin-top: 100px;
+
     p,
-    h2,
-    h4 {
+    h2 {
       color: black;
     }
     h2 {
       font-size: 40px;
-      line-height: 57px;
-      margin-top: 50px;
+      line-height: 50px;
     }
     h3 {
       font-family: $font-secondary;
@@ -52,34 +49,47 @@
       line-height: 36px;
       letter-spacing: 0.1;
       color: $theme-color;
-      margin-top: 0px;
     }
-
     h4 {
+      color: #737373;
       font-weight: 500;
       width: 467px;
       text-align: left;
-      top: 2050px;
     }
   }
 }
-@media (max-width: 800px) {
-  .appwork {
-    margin-top: 370px;
+@media (max-width: 850px) {
+  .para {
+    font-size: 24px;
+    bottom: 0;
+    margin-top: -200px;
+  }
+  .acc-grid {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
 
-    .para {
-      font-size: 24px;
-    }
-
-    img {
-      margin-left: 50px;
-      height: 100%;
-      width: 100vw;
+    .gridimg {
+      width: 100%;
+      margin: auto;
     }
     .acctxt {
+      text-align: center;
+
       width: 100%;
-      height: 100%;
-      display: block;
+
+      h2 {
+        font-size: 24px;
+        line-height: 30px;
+      }
+      h3 {
+        display: contents;
+        font-size: 24px;
+      }
+      h4 {
+        display: contents;
+        width: 320vw;
+        color: #737373;
+      }
     }
   }
 }
