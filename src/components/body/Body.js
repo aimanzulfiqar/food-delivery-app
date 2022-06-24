@@ -1,6 +1,6 @@
 import React from "react";
 import "./body.scss";
-import screens from "../../images/grpimg.png";
+
 import useWindowSize from "../../utils/useWindowSize";
 
 const Body = (props) => {

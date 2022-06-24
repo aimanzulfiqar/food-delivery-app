@@ -4,16 +4,6 @@
   padding: 0;
   height: 100%;
 }
-
-.para {
-  color: black;
-  font-family: $font-secondary;
-  font-weight: $font-600;
-  font-size: 44px;
-  display: flex;
-  line-height: $line-height;
-  text-align: center;
-}
 .acc-grid {
   display: flex;
   flex-direction: row;
@@ -124,16 +114,8 @@
     }
   }
 }
-@media (max-width: 900px) {
-  .para {
-    margin-top: 0;
-    padding: 20px;
-  }
-}
+
 @media (max-width: 400px) {
-  .para {
-    margin-top: 240px;
-  }
   .appwork {
     .acctxt {
       display: flex;

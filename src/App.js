@@ -9,7 +9,7 @@ import downloadimg from "./images/download.png";
 import bg from "./images/bg-img.png";
 import Footer from "./components/footer/Footer";
 import useWindowSize from "./utils/useWindowSize";
-import Divider from "./components/Divider";
+import Divider from "./components/Divider/Divider";
 const App = () => {
   const [width, height] = useWindowSize();
   return (

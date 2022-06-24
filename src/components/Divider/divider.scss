@@ -1,0 +1,29 @@
+.divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -80px;
+
+  .para {
+    color: black;
+    // font-family: $font-secondary;
+    // font-weight: $font-600;
+    font-size: 44px;
+    display: flex;
+    // line-height: $line-height;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .divider {
+    img {
+      margin-top: 60px;
+      width: 100%;
+    }
+    .para {
+      font-size: 24px;
+    }
+  }
+}
