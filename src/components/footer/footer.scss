@@ -1,0 +1,42 @@
+.footerContainer {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+
+  .box {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 9%;
+  }
+  .icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+  }
+  p {
+    color: black;
+  }
+}
+@media (max-width: 1000px) {
+  .footerContainer {
+    .box {
+      justify-content: center;
+      vertical-align: middle;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    display: none;
+  }
+}

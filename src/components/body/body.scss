@@ -7,10 +7,9 @@
   padding: 0;
 }
 .container {
-  background: url("../../images/bg-img.png");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 619px;
+  height: calc(100vh - 156px);
   width: 100vw;
 }
 .font {
@@ -47,22 +46,20 @@ h4 {
   text-align: center;
   color: #f7f7f7;
 }
-
 .btn {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  column-gap: 20px;
+  align-items: center;
+  gap: 2%;
 }
-
 .btn-orng {
   width: 236px;
   height: 68px;
   background: $theme-color;
-  box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
   border-radius: 30px;
   font-family: $primary-family;
   font-weight: $font-weight;
+  border: none;
 }
 
 .btn-transparent {
@@ -71,26 +68,22 @@ h4 {
   background: transparent;
   border: 1px solid #ffffff;
   border-radius: 30px;
-  flex-grow: 0;
 }
 .img-container {
   display: flex;
   justify-content: center;
-  margin-top: -100px;
+  margin-top: 0px;
 }
 
 hr {
   width: 50%;
-  margin: 0 auto;
-
+  margin: 80px auto;
   border: 3px solid #e4e4e4;
 }
 
 @media screen and (max-width: 800px) {
   .container {
     width: 100vw;
-    height: 778px;
-
     background: #fafafa;
   }
   .font {
@@ -103,19 +96,20 @@ hr {
     display: block;
     font-style: normal;
     font-weight: $font-weight;
-    font-size: 16px;
+    font-size: 24px;
+    padding: 2%;
+    margin-top: 80px;
     line-height: 24px;
-    margin-top: 50px;
     color: #737373;
   }
   .tag {
     width: 100vw;
     height: 128px;
+    margin-bottom: 0px;
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 42px;
-
+    line-height: 32px;
     text-align: center;
     letter-spacing: 0.2px;
 
@@ -124,22 +118,20 @@ hr {
   h4 {
     width: 320px;
     height: 76px;
-
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
     font-size: 24px;
-    line-height: 38px;
+    line-height: 28px;
 
     text-align: center;
     letter-spacing: 0.2px;
-
     color: #737373;
   }
   .btn {
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 50px;
     gap: 17px;
   }
   .btn-transparent {
@@ -149,11 +141,48 @@ hr {
   .img-container {
     margin: 0;
     img {
-      width: 100%;
+      width: 50%;
     }
   }
 
   hr {
     width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    .font {
+      h3 {
+        display: none;
+      }
+      h5 {
+        padding: 0%;
+      }
+      .tag {
+        width: 70vw;
+        font-size: 30px;
+        height: 100%;
+        padding: 20px;
+
+        text-align: center;
+        line-height: 30px;
+        letter-spacing: 0.2px;
+        font-size: $font-secondary;
+        font-weight: $font-weight;
+      }
+    }
+  }
+  hr {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn-orng {
+    background: $theme-color;
+    font-family: $primary-family;
+    font-weight: $font-weight;
+    padding-left: 18;
   }
 }

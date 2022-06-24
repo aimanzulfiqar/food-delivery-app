@@ -15,19 +15,14 @@
   height: 156px;
   background-color: $bg-color;
   align-items: center;
+  justify-content: space-between;
+  padding: 40px;
 }
-.logo {
-  margin-left: 20px;
-}
-
 .navbar {
   ul {
     display: flex;
-    width: 100%;
+    color: black;
     gap: 94px;
-    margin: 0%;
-    padding: 0;
-    justify-content: right;
   }
   li {
     list-style: none;
@@ -49,12 +44,29 @@ a:hover {
 }
 
 @media (max-width: 800px) {
-  ul {
-    flex-wrap: wrap;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    ul {
+      display: none;
+    }
+  }
+  .iconsBox {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0%;
+  }
+  .navbar {
+    img {
+      display: flex;
+    }
   }
   .navbar-tgl {
-    display: flex;
-    margin: 80px;
+    display: inline;
+    margin: 50px 0;
   }
 
   a {
