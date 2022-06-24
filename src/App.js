@@ -54,7 +54,8 @@ meal as e dey hot."
         img={downloadimg}
         display="none"
         tag="Download the app now."
-        slogan="Available on your favorite store. Start your premium experience now"
+        slogan="Most calendars are 
+designed for teams. "
         margintop="150px"
         bgClr="#252B42"
         fontClr="white"

@@ -156,7 +156,6 @@ hr {
         font-size: 30px;
         height: 100%;
         padding: 20px;
-
         text-align: center;
         line-height: 30px;
         letter-spacing: 0.2px;
@@ -166,13 +165,4 @@ hr {
     }
   }
   //
-}
-
-@media (max-width: 500px) {
-  .btn-orng {
-    background: $theme-color;
-    font-family: $primary-family;
-    font-weight: $font-weight;
-    padding-left: 18;
-  }
 }

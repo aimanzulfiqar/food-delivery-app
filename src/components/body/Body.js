@@ -50,9 +50,10 @@ const Body = (props) => {
             style={{
               borderRadius: props.isFirst ? 30 : 10,
               color: props.isFirst ? "white" : "white",
-              color: width < 800 ? "orange" : "white",
+              color:
+                width < 800 ? (props.isFirst ? "black" : "white") : "white",
               borderColor: width < 800 ? "orange" : "white",
-              borderColor: props.isFirst ? "orange" : "orange",
+              borderColor: props.isFirst ? "orange" : "white",
             }}
           >
             Try for free
