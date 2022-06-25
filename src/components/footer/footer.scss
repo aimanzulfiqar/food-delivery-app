@@ -40,3 +40,12 @@
     display: none;
   }
 }
+
+@media (max-width: 500px) {
+  .footerContainer {
+    p {
+      font-size: 12px;
+      text-align: center;
+    }
+  }
+}

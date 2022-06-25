@@ -22,6 +22,8 @@ const App = () => {
         bgClr=" #FAFAFA"
         showColor={width < 800 ? true : false}
         isFirst={true}
+        firstBtn="Playstore"
+        secondBtn="App store"
       />
       <Divider />
       <AppWork
@@ -61,6 +63,8 @@ designed for teams. "
         fontClr="white"
         showColor={width < 800 ? true : false}
         isFirst={false}
+        firstBtn="Buy Now"
+        secondBtn="Try For Free"
       />
       <Footer />
     </div>

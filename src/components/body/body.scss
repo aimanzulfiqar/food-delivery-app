@@ -1,11 +1,5 @@
 @import "../../styles/globals.scss";
-* {
-  box-sizing: border-box;
-  color: $bg-color;
-  font-family: $primary-family;
-  margin: 0;
-  padding: 0;
-}
+
 .container {
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,13 +27,11 @@ h5 {
   font-size: 58px;
   text-align: center;
   line-height: 80px;
-  letter-spacing: 0.2px;
   font-size: $font-secondary;
-  font-weight: $font-weight;
 }
 h4 {
   width: 728px;
-  height: 96px;
+  padding-top: 27px;
   font-weight: 500;
   font-size: 24px;
   line-height: 38px;
@@ -50,11 +42,14 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 54px;
   gap: 2%;
 }
 .btn-orng {
   width: 236px;
   height: 68px;
+  font-weight: 700px;
+  font-size: 24px;
   background: $theme-color;
   border-radius: 30px;
   font-family: $primary-family;
@@ -68,6 +63,8 @@ h4 {
   background: transparent;
   border: 1px solid #ffffff;
   border-radius: 30px;
+  font-weight: 700px;
+  font-size: 24px;
 }
 .img-container {
   display: flex;
@@ -129,9 +126,13 @@ hr {
     margin-top: 50px;
     gap: 17px;
   }
+  .btn-orng {
+    font-size: 18px;
+  }
   .btn-transparent {
     border: 1px solid $theme-color;
     color: $theme-color;
+    font-size: 18px;
   }
   .img-container {
     margin: 0;

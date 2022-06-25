@@ -1,0 +1,8 @@
+@import "./globals.scss";
+* {
+  box-sizing: border-box;
+  color: $bg-color;
+  font-family: $primary-family;
+  margin: 0;
+  padding: 0;
+}

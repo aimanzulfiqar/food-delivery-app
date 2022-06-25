@@ -1,5 +1,6 @@
 import React from "react";
 import "./body.scss";
+import "../../styles/globals.scss";
 
 import useWindowSize from "../../utils/useWindowSize";
 
@@ -43,7 +44,7 @@ const Body = (props) => {
               borderRadius: props.isFirst ? 30 : 10,
             }}
           >
-            Buy now
+            {props.firstBtn}
           </button>
           <button
             className="btn-transparent"
@@ -51,12 +52,12 @@ const Body = (props) => {
               borderRadius: props.isFirst ? 30 : 10,
               color: props.isFirst ? "white" : "white",
               color:
-                width < 800 ? (props.isFirst ? "black" : "white") : "white",
+                width < 800 ? (props.isFirst ? "#fa4a0c" : "white") : "white",
               borderColor: width < 800 ? "orange" : "white",
-              borderColor: props.isFirst ? "orange" : "white",
+              borderColor: props.isFirst ? "#fa4a0c" : "white",
             }}
           >
-            Try for free
+            {props.secondBtn}
           </button>
         </div>
       </div>
