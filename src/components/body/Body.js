@@ -50,11 +50,11 @@ const Body = (props) => {
             className="btn-transparent"
             style={{
               borderRadius: props.isFirst ? 30 : 10,
-              color: props.isFirst ? "white" : "white",
+
               color:
                 width < 800 ? (props.isFirst ? "#fa4a0c" : "white") : "white",
-              borderColor: width < 800 ? "orange" : "white",
-              borderColor: props.isFirst ? "#fa4a0c" : "white",
+              borderColor:
+                width < 800 ? (props.isFirst ? "#fa4a0c" : "white") : "white",
             }}
           >
             {props.secondBtn}
