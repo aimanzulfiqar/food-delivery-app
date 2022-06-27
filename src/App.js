@@ -41,7 +41,7 @@ and enjoy while doing it."
         h3="Explore varieties"
         h2="Shop for your favorites
 meal as e dey hot."
-        h4="Shop for your favorite meals <br />or drinks and enjoy while doing it."
+        h4="Shop for your favorite meals or drinks and enjoy while doing it."
         direction={width > 800 ? "row-reverse" : "column-reverse"}
       />
       <AppWork
